@@ -1,0 +1,17 @@
+ansible
+  -自动化部署app
+  -自动化管理配置项
+  -自动化持续交付
+  -自动化(AWS)云服管理
+  
+优势:
+  -只需要ssh和python
+  -无客户端
+  -功能强大,模块丰富
+  -简单易上手
+  -基于python
+      -paramiko
+      -PyYAML
+      -jinja2
+  
+安装ansible  
