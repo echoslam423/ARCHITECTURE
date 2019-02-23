@@ -518,7 +518,7 @@ debug检测
 [root@ansible ansible]# ansible-playbook  --syntax-check  http.yml  //检测语法
 playbook: http.yml
 [root@ansible ansible]# ansible-playbook  -C  http.yml   //测试运行
-[root@ansible ansible]# ansible-playbook   http.yml  --list-tasks  
+[root@ansible ansible]# ansible-playbook   http.yml  --list-tasks    // --list-hosts
 //显示要执行的工作
 playbook: http.yml
   play #1 (cache): cache    TAGS: []
