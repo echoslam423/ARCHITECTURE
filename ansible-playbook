@@ -1,0 +1,14 @@
+playbook基础
+  ansible七武器
+    -ansible命令 
+    -ansible-doc 可以针对不同模块 类似于linux man帮助
+    -ansible-console 交互式的命令方式
+    -ansible-galaxy 从github上下载管理Roles的一款工具,于python的pip类似
+    -ansible-playbook 读取预先编写号的playbook文件实现批量管理,按一定条件组成的ansible任务集
+    -ansible-vault 用于配置文件加密,
+    -ansible-pull  工作模式pull/push 默认是push模式 pull和push机制刚好相反 用于大批量机器配置
+    
+  json简介
+    
+  yaml简介
+  jinja2模版简介
