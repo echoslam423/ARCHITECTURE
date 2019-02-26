@@ -206,4 +206,15 @@ syslog插件
     [root@esnode1 ~]# logger -p local0.notice -t TEST xxxxxxx
     
 
- 
+ filter grok插件
+  grok插件：
+    解析各种非结构化的日志数据插件
+    grok使用正则表达式把飞结构化的数据结构化
+    在分组匹配，正则表达式需要根据具体数据结构编写
+    虽然编写困难，但适用性极广
+
+  filter{
+   grok{
+        match => ["message", "(?<key>reg)"]
+  }
+}
