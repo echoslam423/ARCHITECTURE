@@ -1,0 +1,13 @@
+步骤一：导入数据
+  使用POST方式批量导入数据，数据格式为json，url 编码使用data-binary导入含有index配置的json文件
+    [root@room9pc01 ~]# scp /var/ftp/elk/*.gz 192.168.1.66:/root/
+    [root@kibana ~]# gzip  -d logs.jsonl.gz 
+    [root@kibana ~]#  gzip  -d accounts.json.gz 
+    [root@kibana ~]# gzip  -d shakespeare.json.gz
+    [root@kibana ~]# curl -X POST "http://192.168.1.61:9200/_bulk" \ 
+    --data-binary @shakespeare.json
+    [root@kibana ~]# curl -X POST "http://192.168.1.61:9200/xixi/haha/_bulk" \
+     --data-binary @accounts.json  
+    //索引是xixi，类型是haha，必须导入索引和类型，没有索引，要加上
+    [root@kibana ~]# curl -X POST "http://192.168.1.61:9200/_bulk"  \ 
+    --data-binary @logs.jsonl
